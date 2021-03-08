@@ -40,6 +40,6 @@ chmod 640 "${logfile}"
 test -f revision.txt && cat revision.txt; true
 
 echo "$0: Starting Celery app '${app_name}' (queue: ${eduid_queue})"
-exec celery worker --app="${app_name}.worker" -Q ${eduid_queue} --events \
+exec celery --app="${app_name}.worker" worker -Q ${eduid_queue} --events \
      --uid eduid --gid eduid --logfile="${logfile}" \
     $celery_args
