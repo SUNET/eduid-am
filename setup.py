@@ -6,7 +6,7 @@ from setuptools import setup, find_packages
 
 __author__ = 'leifj'
 
-version = '0.7.10'
+version = '0.7.11'
 
 
 def load_requirements(path: PurePath) -> List[str]:
