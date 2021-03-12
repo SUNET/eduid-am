@@ -1,3 +1,5 @@
+Moved to https://github.com/SUNET/eduid-backend.
+
 RabbitMQ setup:
 
 [lgs@t430s eduid-am]$ sudo rabbitmqctl add_user eduid eduid
